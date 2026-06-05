@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | DriveShare</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --primary:#00C389;
+    --dark:#0f172a;
+    --text:#64748b;
+    --bg:#f8fafc;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter, sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--dark);
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+/* HEADER */
+.top{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.top h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.top p{
+    color:var(--text);
+    font-size:18px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+/* INFO */
+.info{
+    background:linear-gradient(135deg,#081120,#111827);
+    color:white;
+    padding:40px;
+    border-radius:20px;
+}
+
+.info h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.info p{
+    color:#cbd5e1;
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.badge{
+    display:inline-block;
+    padding:6px 12px;
+    background:rgba(0,195,137,.15);
+    color:#7CFFD2;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:999px;
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+/* FORM */
+.form{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.form h2{
+    margin-bottom:20px;
+    font-size:26px;
+}
+
+input, textarea{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border-radius:12px;
+    border:1px solid #e5e7eb;
+    font-size:15px;
+    transition:.2s;
+}
+
+input:focus, textarea:focus{
+    outline:none;
+    border-color:var(--primary);
+    box-shadow:0 0 0 3px rgba(0,195,137,.15);
+}
+
+textarea{
+    resize:none;
+    height:140px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:var(--primary);
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    background:#00a873;
+    transform:translateY(-2px);
+}
+
+/* CONTACT DETAILS */
+.details{
+    margin-top:25px;
+    font-size:14px;
+    color:#cbd5e1;
+}
+
+a{
+    color:var(--primary);
+    text-decoration:none;
+}
+
+.back-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    background:white;
+    color:#0f172a;
+    padding:10px 16px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.2s;
+    z-index:1000;
+}
+
+.back-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .top h1{
+        font-size:34px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+    <a href="index.html" class="back-btn">← Volver al inicio</a>
+
+<div class="container">
+
+<div class="top">
+<h1>Contacta con GoCar</h1>
+<p>Estamos aquí para ayudarte. Responderemos en menos de 24h.</p>
+</div>
+
+<div class="grid">
+
+<!-- INFO -->
+<div class="info">
+
+<span class="badge">Soporte 24/7</span>
+
+<h2>Hablemos</h2>
+
+<p>¿Eres propietario, conductor o inversor? Nuestro equipo te ayuda en todo el proceso.</p>
+
+<p>✔ Respuesta rápida<br>
+✔ Soporte personalizado<br>
+✔ Atención en español</p>
+
+<p style="margin-top:25px;">
+📧 Email: soporte@gocarespaña.com<br>
+📍 Valencia, España<br>
+📞 +34 600 123 456
+</p>
+
+<div class="details">
+También puedes seguirnos en redes sociales o escribirnos directamente desde este formulario.
+</div>
+
+</div>
+
+<!-- FORM -->
+<div class="form">
+
+<h2>Envíanos un mensaje</h2>
+
+<form>
+<input type="text" placeholder="Nombre completo" required>
+<input type="email" placeholder="Correo electrónico" required>
+<input type="text" placeholder="Motivo (Propietario, Conductor, Otro)">
+<textarea placeholder="Escribe tu mensaje..."></textarea>
+
+<button type="submit">Enviar mensaje</button>
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
